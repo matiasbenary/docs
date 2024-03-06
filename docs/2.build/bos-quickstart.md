@@ -1,5 +1,5 @@
 ---
-id: quickstart
+id: bos-quickstart
 title: What are NEAR Components?
 sidebar_label: What is a Component?
 ---

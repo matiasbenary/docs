@@ -10,23 +10,23 @@ import ContactUs from '@site/src/components/ContactUs.mdx';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import BOSGetPrice from "./dex/bos/get-price.md"
-import BOSSwap from "./dex/bos/swap.md"
-import BOSGetPools from "./dex/bos/get-pools.md"
-import BOSGetDepositBalances from "./dex/bos/get-deposit-balances.md"
+import BOSGetPrice from "../../7.primitives/dex/bos/get-price.md"
+import BOSSwap from "../../7.primitives/dex/bos/swap.md"
+import BOSGetPools from "../../7.primitives/dex/bos/get-pools.md"
+import BOSGetDepositBalances from "../../7.primitives/dex/bos/get-deposit-balances.md"
 
-import WebAppGetPrice from "./dex/web-app/get-price.md"
-import WebAppSwap from "./dex/web-app/swap.md"
-import WebAppGetPools from "./dex/web-app/get-pools.md"
-import WebAppGetDepositBalances from "./dex/web-app/get-deposit-balances.md"
+import WebAppGetPrice from "../../7.primitives/dex/web-app/get-price.md"
+import WebAppSwap from "../../7.primitives/dex/web-app/swap.md"
+import WebAppGetPools from "../../7.primitives/dex/web-app/get-pools.md"
+import WebAppGetDepositBalances from "../../7.primitives/dex/web-app/get-deposit-balances.md"
 
-import CLISwap from "./dex/near-cli/swap.md"
-import CLIGetPools from "./dex/near-cli/get-pools.md"
-import CLIGetDepositBalances from "./dex/near-cli/get-deposit-balances.md"
+import CLISwap from "../../7.primitives/dex/near-cli/swap.md"
+import CLIGetPools from "../../7.primitives/dex/near-cli/get-pools.md"
+import CLIGetDepositBalances from "../../7.primitives/dex/near-cli/get-deposit-balances.md"
 
-import SmartContractSwap from "./dex/smart-contract/swap.md"
-import SmartContractGetPools from "./dex/smart-contract/get-pools.md"
-import SmartContractGetDepositBalances from "./dex/smart-contract/get-deposit-balances.md"
+import SmartContractSwap from "../../7.primitives/dex/smart-contract/swap.md"
+import SmartContractGetPools from "../../7.primitives/dex/smart-contract/get-pools.md"
+import SmartContractGetDepositBalances from "../../7.primitives/dex/smart-contract/get-deposit-balances.md"
 
 A Decentralized Exchange (DEX) is an application that allows users to trade tokens (native & fungible tokens) through smart contracts.
 

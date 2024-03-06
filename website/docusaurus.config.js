@@ -114,7 +114,7 @@ const config = {
           position: 'left',
         },
         {
-          to: '/develop/welcome',
+          to: '/build/welcome',
           label: 'Build',
           position: 'left',
         },

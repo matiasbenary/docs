@@ -1,5 +1,5 @@
 ---
-id: whataredatasolutions
+id: data-quickstart
 title: What is Data Infrastructure? 
 ---
 import Tabs from '@theme/Tabs';

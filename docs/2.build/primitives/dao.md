@@ -11,27 +11,27 @@ import ContactUs from '@site/src/components/ContactUs.mdx';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import BOSGetDAOList from "./dao/bos/get-dao-list.md"
-import BOSGetProposalList from "./dao/bos/get-proposal-list.md"
-import BOSCreateDAO from "./dao/bos/create-dao.md"
-import BOSCreateProposal from "./dao/bos/create-proposal.md"
-import BOSVoteForProposal from "./dao/bos/vote-for-proposal.md"
+import BOSGetDAOList from "../../7.primitives/dao/bos/get-dao-list.md"
+import BOSGetProposalList from "../../7.primitives/dao/bos/get-proposal-list.md"
+import BOSCreateDAO from "../../7.primitives/dao/bos/create-dao.md"
+import BOSCreateProposal from "../../7.primitives/dao/bos/create-proposal.md"
+import BOSVoteForProposal from "../../7.primitives/dao/bos/vote-for-proposal.md"
 
-import WebAppGetDAOList from "./dao/web-app/get-dao-list.md"
-import WebAppGetProposalList from "./dao/web-app/get-proposal-list.md"
-import WebAppCreateDAO from "./dao/web-app/create-dao.md"
-import WebAppCreateProposal from "./dao/web-app/create-proposal.md"
-import WebAppVoteForProposal from "./dao/web-app/vote-for-proposal.md"
+import WebAppGetDAOList from "../../7.primitives/dao/web-app/get-dao-list.md"
+import WebAppGetProposalList from "../../7.primitives/dao/web-app/get-proposal-list.md"
+import WebAppCreateDAO from "../../7.primitives/dao/web-app/create-dao.md"
+import WebAppCreateProposal from "../../7.primitives/dao/web-app/create-proposal.md"
+import WebAppVoteForProposal from "../../7.primitives/dao/web-app/vote-for-proposal.md"
 
-import CLIGetDAOList from "./dao/near-cli/get-dao-list.md"
-import CLIGetProposalList from "./dao/near-cli/get-proposal-list.md"
-import CLICreateDAO from "./dao/near-cli/create-dao.md"
-import CLICreateProposal from "./dao/near-cli/create-proposal.md"
-import CLIVoteForProposal from "./dao/near-cli/vote-for-proposal.md"
+import CLIGetDAOList from "../../7.primitives/dao/near-cli/get-dao-list.md"
+import CLIGetProposalList from "../../7.primitives/dao/near-cli/get-proposal-list.md"
+import CLICreateDAO from "../../7.primitives/dao/near-cli/create-dao.md"
+import CLICreateProposal from "../../7.primitives/dao/near-cli/create-proposal.md"
+import CLIVoteForProposal from "../../7.primitives/dao/near-cli/vote-for-proposal.md"
 
-import SmartContractCreateDAO from "./dao/smart-contract/create-dao.md"
-import SmartContractCreateProposal from "./dao/smart-contract/create-proposal.md"
-import SmartContractVoteForProposal from "./dao/smart-contract/vote-for-proposal.md"
+import SmartContractCreateDAO from "../../7.primitives/dao/smart-contract/create-dao.md"
+import SmartContractCreateProposal from "../../7.primitives/dao/smart-contract/create-proposal.md"
+import SmartContractVoteForProposal from "../../7.primitives/dao/smart-contract/vote-for-proposal.md"
 
 Decentralized Autonomous Organizations (DAOs) are self-organized groups that form around common purposes. Membership, decision making, and funding are coordinated by publicly voting on proposals through a smart contract.
 

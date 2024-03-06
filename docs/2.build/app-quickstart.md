@@ -1,5 +1,5 @@
 ---
-id: whatareweb3apps
+id: app-quickstart
 title: What are Web3 Apps? 
 ---
 import Tabs from '@theme/Tabs';

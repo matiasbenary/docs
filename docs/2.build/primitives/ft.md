@@ -10,29 +10,29 @@ import ContactUs from '@site/src/components/ContactUs.mdx';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-import BOSGetMetadata from "./ft/bos/get-metadata.md"
-import BOSCheckBalance from "./ft/bos/check-balance.md"
-import BOSSendToken from "./ft/bos/send.md"
-import BOSRegister from "./ft/bos/register.md"
-import BOSAttachTokenToCall from "./ft/bos/attach-to-call.md"
-import BOSCreateToken from "./ft/bos/create.md"
+import BOSGetMetadata from "../../7.primitives/ft/bos/get-metadata.md"
+import BOSCheckBalance from "../../7.primitives/ft/bos/check-balance.md"
+import BOSSendToken from "../../7.primitives/ft/bos/send.md"
+import BOSRegister from "../../7.primitives/ft/bos/register.md"
+import BOSAttachTokenToCall from "../../7.primitives/ft/bos/attach-to-call.md"
+import BOSCreateToken from "../../7.primitives/ft/bos/create.md"
 
-import WebAppGetMetadata from "./ft/web-app/get-metadata.md"
-import WebAppCheckBalance from "./ft/web-app/check-balance.md"
-import WebAppSendToken from "./ft/web-app/send.md"
-import WebAppRegister from "./ft/web-app/register.md"
-import WebAppAttachTokenToCall from "./ft/web-app/attach-to-call.md"
-import WebAppCreateToken from "./ft/web-app/create.md"
+import WebAppGetMetadata from "../../7.primitives/ft/web-app/get-metadata.md"
+import WebAppCheckBalance from "../../7.primitives/ft/web-app/check-balance.md"
+import WebAppSendToken from "../../7.primitives/ft/web-app/send.md"
+import WebAppRegister from "../../7.primitives/ft/web-app/register.md"
+import WebAppAttachTokenToCall from "../../7.primitives/ft/web-app/attach-to-call.md"
+import WebAppCreateToken from "../../7.primitives/ft/web-app/create.md"
 
-import CLIGetMetadata from "./ft/near-cli/get-metadata.md"
-import CLICheckBalance from "./ft/near-cli/check-balance.md"
-import CLISendToken from "./ft/near-cli/send.md"
-import CLIRegister from "./ft/near-cli/register.md"
-import CLIAttachTokenToCall from "./ft/near-cli/attach-to-call.md"
-import CLICreateToken from "./ft/near-cli/create.md"
+import CLIGetMetadata from "../../7.primitives/ft/near-cli/get-metadata.md"
+import CLICheckBalance from "../../7.primitives/ft/near-cli/check-balance.md"
+import CLISendToken from "../../7.primitives/ft/near-cli/send.md"
+import CLIRegister from "../../7.primitives/ft/near-cli/register.md"
+import CLIAttachTokenToCall from "../../7.primitives/ft/near-cli/attach-to-call.md"
+import CLICreateToken from "../../7.primitives/ft/near-cli/create.md"
 
-import SmartContractSendToken from "./ft/smart-contract/send.md"
-import SmartContractAttachTokenToCall from "./ft/smart-contract/attach-to-call.md"
+import SmartContractSendToken from "../../7.primitives/ft/smart-contract/send.md"
+import SmartContractAttachTokenToCall from "../../7.primitives/ft/smart-contract/attach-to-call.md"
 
 Besides the native NEAR token, NEAR accounts have access to a [multitude of tokens](https://guide.ref.finance/developers-1/cli-trading#query-whitelisted-tokens) to use thoughtout the ecosystem. Moreover, it is even possible for users to create their own fungible tokens.
 

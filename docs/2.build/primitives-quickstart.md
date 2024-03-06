@@ -1,5 +1,5 @@
 ---
-id: whatareprimitives
+id: primitives-quickstart
 title: What are Primitives? 
 ---
 import Tabs from '@theme/Tabs';
