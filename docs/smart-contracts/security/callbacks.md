@@ -1,6 +1,7 @@
 ---
 id: callbacks
-title: Cross-Contract Calls
+title: Callbacks
+description: Learn about callback security in NEAR smart contracts, including proper error handling, state management, and preventing callback-related vulnerabilities.
 ---
 
 While writing cross-contract calls there is a significant aspect to keep in mind: all the calls are **independent** and **asynchronous**. In other words:

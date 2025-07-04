@@ -99,14 +99,14 @@ const sidebar = {
             "ai/shade-agents/examples",
             {
               "Sandbox Agents": [
-                "ai/shade-agents/sandbox/sandbox-deploying",
-                "ai/shade-agents/sandbox/sandbox-components",
+                "ai/shade-agents/sandbox/deploying",
+                "ai/shade-agents/sandbox/components",
               ]
             },
             {
               "Production Agents": [
-                "ai/shade-agents/production/production-deploying",
-                "ai/shade-agents/production/production-components",
+                "ai/shade-agents/production/deploying",
+                "ai/shade-agents/production/components",
               ]
             },
             "ai/shade-agents/plugins",
@@ -658,7 +658,7 @@ const sidebar = {
         'integrations/balance-changes',
         'integrations/accounts',
         'integrations/create-transactions',
-        'integrations/fungible-tokens',
+        'integrations/tokens',
         'integrations/implicit-accounts',
       ],
     },

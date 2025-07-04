@@ -1,7 +1,8 @@
 ---
-id: sandbox-components
+id: components
 title: Sandbox Components
 sidebar_label: Sandbox Components
+description: Learn about the core components of Shade Agents in the sandbox environment, including the worker agent, agent contract, and frontend interface.
 ---
 
 import {Github} from "@site/src/components/codetabs"

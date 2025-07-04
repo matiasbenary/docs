@@ -174,14 +174,63 @@ class LLMsTxtGenerator {
                 const frontmatterText = content.substring(4, endIndex);
                 body = content.substring(endIndex + 5);
                 
-                // Simple YAML parsing for common fields
-                const lines = frontmatterText.split('\n');
-                for (const line of lines) {
-                    const colonIndex = line.indexOf(':');
-                    if (colonIndex > 0) {
-                        const key = line.substring(0, colonIndex).trim();
-                        const value = line.substring(colonIndex + 1).trim().replace(/^["']|["']$/g, '');
-                        frontmatter[key] = value;
+                try {
+                    // Enhanced YAML parsing for common fields
+                    const lines = frontmatterText.split('\n');
+                    let currentKey = null;
+                    let currentValue = '';
+                    let inMultilineValue = false;
+                    
+                    for (const line of lines) {
+                        const trimmedLine = line.trim();
+                        
+                        // Skip empty lines
+                        if (!trimmedLine) continue;
+                        
+                        // Check if this is a key-value pair
+                        const colonIndex = line.indexOf(':');
+                        if (colonIndex > 0 && !line.startsWith(' ') && !line.startsWith('\t')) {
+                            // Save previous key-value pair if exists
+                            if (currentKey) {
+                                frontmatter[currentKey] = currentValue.trim().replace(/^["']|["']$/g, '');
+                            }
+                            
+                            // Start new key-value pair
+                            currentKey = line.substring(0, colonIndex).trim();
+                            currentValue = line.substring(colonIndex + 1).trim();
+                            inMultilineValue = false;
+                            
+                            // Check if value is empty (multiline case)
+                            if (!currentValue) {
+                                inMultilineValue = true;
+                                currentValue = '';
+                            }
+                        } else if (currentKey && (inMultilineValue || line.startsWith(' ') || line.startsWith('\t'))) {
+                            // This is a continuation of the previous value
+                            if (currentValue) {
+                                currentValue += ' ';
+                            }
+                            currentValue += trimmedLine;
+                        }
+                    }
+                    
+                    // Save the last key-value pair
+                    if (currentKey) {
+                        frontmatter[currentKey] = currentValue.trim().replace(/^["']|["']$/g, '');
+                    }
+                    
+                } catch (error) {
+                    console.warn(`Error parsing YAML frontmatter: ${error.message}`);
+                    
+                    // Fallback to simple parsing
+                    const lines = frontmatterText.split('\n');
+                    for (const line of lines) {
+                        const colonIndex = line.indexOf(':');
+                        if (colonIndex > 0) {
+                            const key = line.substring(0, colonIndex).trim();
+                            const value = line.substring(colonIndex + 1).trim().replace(/^["']|["']$/g, '');
+                            frontmatter[key] = value;
+                        }
                     }
                 }
             }
@@ -210,8 +259,11 @@ class LLMsTxtGenerator {
                 }
             }
 
+            if(!frontmatter.description){
+                 console.log('\n',title, 'does not have a description in frontmatter\n');
+            }
             // Get description from frontmatter, sidebar_label, or first paragraph
-            let description = frontmatter.sidebar_label || '';
+            let description = frontmatter.description || frontmatter.sidebar_label || '';
             
             if (!description) {
                 // For performance, only clean content if we need to extract description

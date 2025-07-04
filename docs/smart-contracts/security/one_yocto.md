@@ -1,6 +1,7 @@
 ---
 id: one-yocto
 title: Ensure it is the User (1yⓃ)
+description: Learn about the one yocto security pattern in NEAR smart contracts for verifying account ownership and preventing unauthorized access.
 ---
 
 NEAR uses a system of [Access Keys](../../protocol/access-keys.md) to simplify handling accounts.

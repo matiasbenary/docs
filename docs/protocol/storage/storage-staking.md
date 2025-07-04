@@ -1,6 +1,7 @@
 ---
 id: storage-staking
 title: Storage Staking
+description: Learn about NEAR Protocol's storage staking mechanism, including costs, storage pricing, attack prevention, and strategies for managing on-chain data storage.
 sidebar_label: Storage Staking
 ---
 

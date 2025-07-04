@@ -1,6 +1,7 @@
 ---
 id: faq
 title: Integrator FAQ
+description: Frequently asked questions about NEAR protocol integrations, including account management, transaction fees, and common development challenges.
 sidebar_label: Integrator FAQ
 ---
 

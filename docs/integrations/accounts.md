@@ -1,7 +1,7 @@
 ---
 id: accounts
 title: Accounts
-sidebar_label: Accounts
+description: Learn about NEAR account management for exchanges and integrations, including account creation, key management, and balance tracking.
 ---
 
 import Tabs from '@theme/Tabs';
@@ -486,16 +486,7 @@ but does not perform the actual transfer. The transaction result is as follows:
         },
         "tokens_burnt": "242820496361800000000"
       },
-      "proof": [
-        {
-          "direction": "Right",
-          "hash": "AsNAQabPFkmaugRGhCbzcEcR8Gnd22WXxPM2fb2cwHiv"
-        },
-        {
-          "direction": "Right",
-          "hash": "GirkzdS9YpsAz5fXuL5T3rXd93aRcnXNAdXYi241qpWK"
-        }
-      ]
+      "proof": []
     }
   }
 }

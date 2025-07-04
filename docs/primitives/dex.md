@@ -1,6 +1,7 @@
 ---
 id: dex
 title: Decentralized Exchanges (DEX)
+description: Learn how to interact with decentralized exchanges on NEAR Protocol, including token swapping, liquidity pools, and integration with Ref Finance DEX.
 hide_table_of_contents: false
 ---
 

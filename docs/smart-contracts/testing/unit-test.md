@@ -1,6 +1,7 @@
 ---
 id: unit-test
 title: Unit Testing
+description: Learn how to write and run unit tests for NEAR smart contracts to test individual methods and functions in isolation.
 #sidebar_label: 🧫 Unit Testing
 ---
 import {CodeTabs, Language, Github} from "@site/src/components/codetabs"

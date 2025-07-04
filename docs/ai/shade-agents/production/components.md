@@ -1,7 +1,8 @@
 ---
-id: production-components
+id: components
 title: Key Components
 sidebar_label: Key Components
+description: Learn about the core components of production Shade Agents, including security considerations, worker agents, agent contracts, and deployment patterns.
 ---
 
 import {Github} from "@site/src/components/codetabs"

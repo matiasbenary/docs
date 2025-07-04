@@ -1,6 +1,7 @@
 ---
 id: account-model
 title: NEAR Accounts
+description: Learn about NEAR Protocol's account model, including named and implicit accounts, access keys, permissions, and how NEAR accounts differ from other blockchain platforms.
 sidebar_label: Overview
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: advanced-xcc
-title: Complex Cross Contract Call
+title: Complex Cross-Contract Calls
+description: Master advanced cross-contract call patterns in NEAR Protocol, including callbacks, error handling, and complex multi-contract interactions.
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -251,7 +252,6 @@ The contract readily includes a set of unit and sandbox testing to validate its 
   <TabItem value="rust" label="🦀 Rust">
   
   ```bash
-  cd contract-advanced-rs
   cargo test
   ```
 

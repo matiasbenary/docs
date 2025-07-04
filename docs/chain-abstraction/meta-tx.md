@@ -2,6 +2,7 @@
 id: meta-transactions
 title: Meta Transactions
 sidebar_label: NEP-366
+description: Learn about NEP-366 meta transactions on NEAR, allowing users to execute transactions without owning gas tokens by using relayers to cover transaction fees.
 ---
 
 [NEP-366](https://github.com/near/NEPs/pull/366) introduced the concept of meta

@@ -1,6 +1,7 @@
 ---
 id: token-loss
 title: Avoiding Token Loss
+description: Learn about scenarios that can lead to token loss in NEAR Protocol and how to prevent them, including key management, account deletion, and smart contract failures.
 sidebar_label: Avoiding Token Loss
 ---
 

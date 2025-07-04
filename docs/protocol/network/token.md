@@ -1,6 +1,7 @@
 ---
 id: tokens
 title: Tokens
+description: Learn about NEAR tokens, their role in network security through staking, transaction processing, storage costs, and as a medium of exchange in the NEAR ecosystem.
 ---
 
 # NEAR Token

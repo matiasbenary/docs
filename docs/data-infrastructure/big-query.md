@@ -1,6 +1,7 @@
 ---
 id: big-query
 title: BigQuery Public Dataset
+description: Learn how to use NEAR Protocol's BigQuery public dataset for blockchain data analysis, including querying on-chain data, understanding costs, and accessing historical transaction data.
 sidebar_label: BigQuery
 ---
 

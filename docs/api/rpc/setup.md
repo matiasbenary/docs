@@ -1,6 +1,7 @@
 ---
 id: setup
 title: Setup 
+description: Learn how to set up RPC endpoints for NEAR networks, configure authentication, and use tools like Postman, JavaScript, and HTTPie to interact with the API.
 ---
 
 In order to use the RPC API you will need to setup the correct RPC endpoints.
@@ -92,7 +93,7 @@ The `near-final` finallity has **enough guarantees** for any normal operations, 
 
 <details>
 
-<summary> How Is Finality Calculated?</summary>
+<summary>How Is Finality Calculated?</summary>
 
 After a simple transaction (no cross-contract calls) is submitted it is included in a block B and converted into a receipt. At this point, the transaction will be in an "optimistic" state. This means that the transaction could still be skipped, but only if another block is .
 

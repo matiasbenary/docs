@@ -1,7 +1,7 @@
 ---
 id: introduction
 title: Introduction
-sidebar_label: Introduction
+description: Learn about common error patterns in NEAR protocol integrations and how to handle and troubleshoot issues in your applications.
 ---
 
 <blockquote className="info">

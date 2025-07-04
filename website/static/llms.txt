@@ -8,72 +8,72 @@ This documentation is organized into several main sections: Protocol fundamental
 
 ## Core Protocol
 
-- [Access Keys](https://docs.near.org/protocol/access-keys) : In most blockchains, users control their accounts by holding a single private key (a secret only they know) and using it to sign transactions.
-- [Address (Account ID)](https://docs.near.org/protocol/account-id) : NEAR accounts are identified by a unique address, which takes one of two forms:
-- [Anatomy of a Transaction](https://docs.near.org/protocol/transaction-anatomy) : A transaction is a request from a user to the network to perform a set of actions. To create a transaction, the user must specify the following fields:
-- [Avoiding Token Loss](https://docs.near.org/protocol/network/token-loss) : Avoiding Token Loss
-- [Decentralized Storage Solutions](https://docs.near.org/protocol/storage/decentralized-storage) : Alternative Solutions
-- [Epoch](https://docs.near.org/protocol/network/epoch) : An epoch is a unit of time when validators of the network remain constant. It is measured in blocks:
-- [Gas (Execution Fees)](https://docs.near.org/protocol/gas) : On every transaction the NEAR network charges a tiny fee known as gas. This fee is a simple mechanism that allows us to:
-- [Lifecycle of a Transaction](https://docs.near.org/protocol/transaction-execution) : Transactions are constructed by users to express the intent of performing actions in the network. Once in the network, transactions are converted into Receipts, which are messages exchanged between network nodes.
-- [NEAR Accounts](https://docs.near.org/protocol/account-model) : Overview
-- [NEAR Data Flow](https://docs.near.org/protocol/data-flow/near-data-flow) : NEAR Data Flow
+- [Access Keys](https://docs.near.org/protocol/access-keys) : Learn about NEAR's access key system with Full-Access Keys for complete account control and Function-Call Keys for restricted, shareable permissions to specific contracts.
+- [Address (Account ID)](https://docs.near.org/protocol/account-id) : Learn about NEAR account addresses - implicit addresses (64 characters) and named addresses that work as domains, including sub-account creation and management.
+- [Anatomy of a Transaction](https://docs.near.org/protocol/transaction-anatomy) : Learn about the structure and components of NEAR Protocol transactions, including signers, receivers, actions, and transaction validation fields.
+- [Avoiding Token Loss](https://docs.near.org/protocol/network/token-loss) : Learn about scenarios that can lead to token loss in NEAR Protocol and how to prevent them, including key management, account deletion, and smart contract failures.
+- [Decentralized Storage Solutions](https://docs.near.org/protocol/storage/decentralized-storage) : Explore decentralized storage alternatives for NEAR Protocol applications, including Arweave, Crust, and IPFS integration for cost-effective data storage.
+- [Epoch](https://docs.near.org/protocol/network/epoch) : Learn about epochs in NEAR Protocol, including their duration, role in validator selection, and how they affect network operations and data retention.
+- [Gas (Execution Fees)](https://docs.near.org/protocol/gas) : Learn about NEAR's gas system - execution fees that prevent spam, incentivize developers with 30% of burned gas, and use deterministic gas units with dynamic pricing.
+- [Lifecycle of a Transaction](https://docs.near.org/protocol/transaction-execution) : Comprehensive guide to transaction execution in NEAR Protocol, including receipts, finality, cross-contract calls, and transaction status determination.
+- [NEAR Accounts](https://docs.near.org/protocol/account-model) : Learn about NEAR Protocol's account model, including named and implicit accounts, access keys, permissions, and how NEAR accounts differ from other blockchain platforms.
+- [NEAR Data Flow](https://docs.near.org/protocol/data-flow/near-data-flow) : Understanding how data flows through NEAR Protocol blockchain, including shards, transactions, receipts, and cross-shard communication.
 
 ## AI and Agents
 
-- [AI and NEAR](https://docs.near.org/ai/introduction) : Introduction
-- [Shade Agents](https://docs.near.org/ai/shade-agents/introduction) : What are Shade Agents?
-- [Components](https://docs.near.org/ai/shade-agents/production/components) : In this section, well explore the main components of a Shade Agent and how you can modify this template to build your own agent.
-- [Components](https://docs.near.org/ai/shade-agents/sandbox/components) : In this section, well explore the main components of the Shade Agent sandbox and how you can modify the sandbox template to build your own agent.
-- [Deploying to Production](https://docs.near.org/ai/shade-agents/production/deploying) : In this section well walk through deploying your first Shade Agent. The template were using is a simple Shade Agent built with NextJS that acts as a verifiable ETH price oracle. It takes prices from two different APIs, takes the average and then pushes the price to an Ethereum contract.
-- [Examples](https://docs.near.org/ai/shade-agents/examples) : With their extensive list of features, Shade Agents unlock a wide range of new use cases, enable many previously centralized apps to become decentralized, and change how blockchain applications are designed.
-- [Plugins](https://docs.near.org/ai/shade-agents/plugins) : Docs for integrating LLMs and Twitter APIs into your Shade Agent will be coming soon.
-- [Using the Sandbox](https://docs.near.org/ai/shade-agents/sandbox/deploying) : Using the Sandbox
+- [AI and NEAR](https://docs.near.org/ai/introduction) : Introduction to NEAR's User-Owned AI vision, featuring Shade Agents for verifiable multichain AI agents, NEAR AI network infrastructure, and Bitte Protocol for smart contract interactions.
+- [Shade Agents](https://docs.near.org/ai/shade-agents/introduction) : Learn about Shade Agents - decentralized and trustless AI agents that control accounts and assets across multiple blockchains using TEEs and NEAR's decentralized key management.
+- [Deploying an Agent](https://docs.near.org/ai/shade-agents/production/deploying) : Learn how to deploy Shade Agents to production environments with full contract customization and flexible architecture for real-world applications.
+- [Examples](https://docs.near.org/ai/shade-agents/examples) : Explore example Shade Agent implementations and agentic protocol ideas, including trading agents, DeFi protocols, and autonomous applications.
+- [Key Components](https://docs.near.org/ai/shade-agents/production/components) : Learn about the core components of production Shade Agents, including security considerations, worker agents, agent contracts, and deployment patterns.
+- [Sandbox Components](https://docs.near.org/ai/shade-agents/sandbox/components) : Learn about the core components of Shade Agents in the sandbox environment, including the worker agent, agent contract, and frontend interface.
+- [Shade Agent Plugins](https://docs.near.org/ai/shade-agents/plugins) : Learn how to create and use plugins to extend Shade Agents functionality with custom capabilities and integrations.
+- [Using the Sandbox](https://docs.near.org/ai/shade-agents/sandbox/deploying) : Learn how to deploy a Shade Agent in the sandbox environment with a pre-configured template for rapid prototyping and experimentation.
 
 ## Chain Abstraction
 
-- [What is Chain Abstraction?](https://docs.near.org/chain-abstraction/what-is) : Blockchain development today faces a critical challenge: users need to understand complex blockchain concepts, manage multiple wallets, and deal with different networks just to use basic applications. Chain abstraction solves this by making blockchain technology invisible to end users while preserving all of the underlying benefits.
-- [Building a Meta Transaction Relayer](https://docs.near.org/chain-abstraction/meta-transactions) : Building a Relayer
-- [FastAuth SDK](https://docs.near.org/chain-abstraction/fastauth-sdk) : FastAuth (Email Login)
-- [Getting Started with Chain Signatures](https://docs.near.org/chain-abstraction/chain-signatures/getting-started) : Chain Signatures is a groundbreaking technology built on NEAR that enables all accounts, including smart contracts, to sign and execute transactions across multiple blockchains.
-- [How Omni Bridge Works](https://docs.near.org/chain-abstraction/omnibridge/how-it-works) : How It Works
-- [Implementation Details](https://docs.near.org/chain-abstraction/omnibridge/implementation) : Implementation Details
-- [Implementing Chain Signatures](https://docs.near.org/chain-abstraction/chain-signatures/implementation) : Chain signatures enable NEAR accounts, including smart contracts, to sign and execute transactions across many blockchain protocols.
-- [Meta Transactions](https://docs.near.org/chain-abstraction/meta-tx) : NEP-366
-- [NEAR Intents](https://docs.near.org/chain-abstraction/intents/overview) : NEAR Intents
-- [NFT Chain Keys Smart Contract](https://docs.near.org/chain-abstraction/nft-keys) : NFT Chain Keys Contract
+- [What is Chain Abstraction?](https://docs.near.org/chain-abstraction/what-is) : Learn about chain abstraction and how NEAR's framework makes blockchain technology invisible to users while preserving benefits through NEAR Intents, Chain Signatures, and OmniBridge.
+- [Building a Meta Transaction Relayer](https://docs.near.org/chain-abstraction/meta-transactions) : Learn how to build a meta transaction relayer that allows users to transact on NEAR without paying gas fees while maintaining transaction security through signed delegates.
+- [FastAuth SDK](https://docs.near.org/chain-abstraction/fastauth-sdk) : Learn about FastAuth SDK, a key management system that enables users to recover or sign up for NEAR accounts using their email address.
+- [Getting Started with Chain Signatures](https://docs.near.org/chain-abstraction/chain-signatures/getting-started) : Learn how to get started with Chain Signatures on NEAR, a groundbreaking technology that enables accounts to sign and execute transactions across multiple blockchains using MPC.
+- [How Omni Bridge Works](https://docs.near.org/chain-abstraction/omnibridge/how-it-works) : Understand how Omni Bridge works using Chain Signatures and MPC services to enable trustless cross-chain transfers without complex light client implementations.
+- [Implementation Details](https://docs.near.org/chain-abstraction/omnibridge/implementation) : Learn about the technical implementation of Omni Bridge, including bridge token factory patterns, MPC signing, security models, and relayer networks for cross-chain transfers.
+- [Implementing Chain Signatures](https://docs.near.org/chain-abstraction/chain-signatures/implementation) : Learn how to implement Chain Signatures to enable NEAR accounts to sign and execute transactions across multiple blockchain protocols using the chainsig.js library.
+- [Meta Transactions](https://docs.near.org/chain-abstraction/meta-tx) : Learn about NEP-366 meta transactions on NEAR, allowing users to execute transactions without owning gas tokens by using relayers to cover transaction fees.
+- [NEAR Intents](https://docs.near.org/chain-abstraction/intents/overview) : Learn about NEAR Intents, a multichain transaction protocol where users specify desired outcomes and market makers compete to provide optimal solutions across crypto and traditional services.
+- [NFT Chain Keys Smart Contract](https://docs.near.org/chain-abstraction/nft-keys) : Learn about NFT Chain Keys, a smart contract that makes remote account ownership provable and transferrable using NEP-171 NFT standards and MPC signatures.
 
 ## Smart Contracts
 
-- [What is a Smart Contract?](https://docs.near.org/smart-contracts/what-is) : What is a Contract?
-- [Introduction](https://docs.near.org/smart-contracts/testing/introduction) : While developing your smart contract you will want to test that it works as it is supposed to, and moreover, does so securely. In NEAR we have developed tools to help you carry out such tests. Basically, there are two types of tests you can perform:
+- [What is a Smart Contract?](https://docs.near.org/smart-contracts/what-is) : Learn about NEAR smart contracts - executable code that lives in accounts, stores data, performs transactions, and can be written in JavaScript or Rust.
+- [Introduction](https://docs.near.org/smart-contracts/testing/introduction) : Learn about testing NEAR smart contracts, including unit tests, integration tests, and best practices for ensuring contract reliability and security.
 - [Basic Anatomy](https://docs.near.org/smart-contracts/anatomy/anatomy) : Lets illustrate the basic anatomy of a simple "Hello World" contract. The code on this page comes from our Hello NEAR repository on GitHub.
 - [Best Practices](https://docs.near.org/smart-contracts/anatomy/best-practices) : Here we lay out some best practices for writing smart contracts on NEAR, such as:
-- [Callbacks](https://docs.near.org/smart-contracts/security/callbacks) : While writing cross-contract calls there is a significant aspect to keep in mind: all the calls are independent and asynchronous. In other words:
-- [Checklist](https://docs.near.org/smart-contracts/security/checklist) : Once you finished developing your smart contract please go through the following list in order to ensure everything is safe for the end user.
+- [Callbacks](https://docs.near.org/smart-contracts/security/callbacks) : Learn about callback security in NEAR smart contracts, including proper error handling, state management, and preventing callback-related vulnerabilities.
+- [Checklist](https://docs.near.org/smart-contracts/security/checklist) : Security checklist for NEAR smart contracts covering common vulnerabilities, best practices, and pre-deployment security verification steps.
 - [Collections](https://docs.near.org/smart-contracts/anatomy/collections) : When deciding on data structures it is important to understand their tradeoffs. Choosing the wrong structure can create a bottleneck as the application scales, and migrating the state to the new data structures will come at a cost.
-- [Creating a Local Development Environment](https://docs.near.org/smart-contracts/testing/kurtosis-localnet) : Local Development
+- [Creating a Local Development Environment](https://docs.near.org/smart-contracts/testing/kurtosis-localnet) : Using Kurtosis NEAR Package to develop locally
 - [Cross-Contract Calls](https://docs.near.org/smart-contracts/anatomy/crosscontract) : Your contract can interact with other deployed contracts, querying information and executing functions on them.
-- [Ensure it is the User (1yⓃ)](https://docs.near.org/smart-contracts/security/one_yocto) : NEAR uses a system of Access Keys to simplify handling accounts.
+- [Ensure it is the User (1yⓃ)](https://docs.near.org/smart-contracts/security/one_yocto) : Learn about the one yocto security pattern in NEAR smart contracts for verifying account ownership and preventing unauthorized access.
 
 ## Web3 Applications
 
-- [What are Web3 Apps?](https://docs.near.org/web3-apps/what-is) : Web3 Applications - also known as decentralized apps (dApps) - leverage smart contracts and blockchain data to offer transparency, security and giving back control to users over their assets and data.
-- [AI Assistant](https://docs.near.org/web3-apps/ai/ai-assistant) : Welcome! In this guide, youll discover an AI chatbot that can interact with the NEAR ecosystem
-- [Authenticate NEAR Users](https://docs.near.org/web3-apps/backend/backend) : Recently NEAR has approved a new standard that, among other things, enables users to authenticate into a backend service.
-- [Hello WebApp](https://docs.near.org/web3-apps/quickstart) : Quickstart ✨
-- [How to integrate Ethereum Wallets to Near DApps?](https://docs.near.org/web3-apps/ethereum-wallets) : Ethereum Wallets on Near
-- [Integrating Contracts](https://docs.near.org/web3-apps/integrate-contracts) : To integrate NEAR to your frontend, you will leverage two tools:
+- [What are Web3 Apps?](https://docs.near.org/web3-apps/what-is) : Learn about Web3 applications (dApps) that leverage smart contracts and blockchain data to offer transparency, security, and user control over assets and data.
+- [AI Assistant](https://docs.near.org/web3-apps/ai/ai-assistant) : Build an AI chatbot that can interact with the NEAR ecosystem, explore transactions, mint NFTs, request faucet tokens, and answer questions about NEAR architecture.
+- [Authenticate NEAR Users](https://docs.near.org/web3-apps/backend/backend) : Learn how to authenticate NEAR users in your backend service by creating challenges, requesting wallet signatures, and verifying signatures.
+- [Hello WebApp](https://docs.near.org/web3-apps/quickstart) : Quick guide to create a Web3 frontend application with NEAR integration - build a React/Next.js app where users can login with wallets and interact with smart contracts.
+- [How to integrate Ethereum Wallets to Near DApps?](https://docs.near.org/web3-apps/ethereum-wallets) : Learn how to integrate Ethereum wallets like MetaMask into your NEAR DApp using the Near Wallet Selector, Web3Modal, and wagmi libraries.
+- [Integrating Contracts](https://docs.near.org/web3-apps/integrate-contracts) : Learn how to integrate NEAR smart contracts into your frontend using Wallet Selector and NEAR API JS - handle user login, call contract methods, and manage transactions.
 
 ## Tokens and Primitives
 
-- [What are Primitives?](https://docs.near.org/primitives/what-is) : Primitives are fundamental building blocks that can be combined to create a fully functional application. Blockchain primitives include Fungible Tokens (FT), Non Fungible Tokens (NFT), Decentralized Autonomous organizations (DAO), Link Drops and more.
-- [Decentralized Autonomous Organizations](https://docs.near.org/primitives/dao) : Autonomous Organizations (DAO)
-- [Decentralized Exchanges (DEX)](https://docs.near.org/primitives/dex) : A Decentralized Exchange (DEX) is an application that allows users to trade tokens (native & fungible tokens) through smart contracts.
-- [Fungible Tokens (FT)](https://docs.near.org/primitives/ft) : Besides the native NEAR token, NEAR accounts have access to a multitude of tokens to use throughout the ecosystem. Moreover, it is even possible for users to create their own fungible tokens.
-- [Linkdrops](https://docs.near.org/primitives/linkdrop) : Linkdrops allow users to distribute assets and onboard people to Web3 apps through a simple web link.
-- [Non-Fungible Tokens (NFT)](https://docs.near.org/primitives/nft) : In contrast with fungible tokens, non-fungible tokens (NFT) are unitary and therefore unique. This makes NFTs ideal to represent ownership of assets such as a piece of digital content, or a ticket for an event.
-- [Oracles](https://docs.near.org/primitives/oracles) : Blockchain Oracles serve as intermediaries that connect smart contracts with external (off-chain) data.
+- [What are Primitives?](https://docs.near.org/primitives/what-is) : Learn about blockchain primitives including Fungible Tokens (FT), Non-Fungible Tokens (NFT), Decentralized Autonomous Organizations (DAO), and LinkDrops as building blocks for applications.
+- [Decentralized Autonomous Organizations](https://docs.near.org/primitives/dao) : Learn about Decentralized Autonomous Organizations (DAOs) on NEAR - self-organized groups that coordinate membership, decision-making, and funding through smart contract voting.
+- [Decentralized Exchanges (DEX)](https://docs.near.org/primitives/dex) : Learn how to interact with decentralized exchanges on NEAR Protocol, including token swapping, liquidity pools, and integration with Ref Finance DEX.
+- [Fungible Tokens (FT)](https://docs.near.org/primitives/ft) : Learn about NEAR fungible tokens (FT) following NEP-141 and NEP-148 standards - create, transfer, and integrate FT contracts with comprehensive examples and tools.
+- [Linkdrops](https://docs.near.org/primitives/linkdrop) : Learn about linkdrops following NEP-452 standard - distribute assets and onboard users to Web3 apps through simple web links using access keys and the Keypom platform.
+- [Non-Fungible Tokens (NFT)](https://docs.near.org/primitives/nft) : Learn about NEAR non-fungible tokens (NFT) following NEP-171 and NEP-177 standards - mint, transfer, query, and trade unique digital assets with comprehensive examples.
+- [Oracles](https://docs.near.org/primitives/oracles) : Learn about blockchain oracles on NEAR Protocol, including price feeds, data integration, and using oracle services like NearDefi Price Oracle and Pyth Network.
 
 ## Developer Tools
 
@@ -82,9 +82,9 @@ This documentation is organized into several main sections: Protocol fundamental
 - [Explorer](https://docs.near.org/tools/explorer) : Explorers
 - [FastNEAR](https://docs.near.org/tools/ecosystem-apis/fastnear-api) : FastNEAR allows to easily query the NEAR blockchain to get an accounts assets, map keys into account IDs, explore a blocks transactions, etc.
 - [Indexing Solutions on NEAR](https://docs.near.org/tools/indexing-tools) : Indexing Solutions
-- [NEAR API](https://docs.near.org/tools/near-api) : NEAR API
-- [NEAR CLI](https://docs.near.org/tools/cli) : The NEAR Command Line Interface (CLI) is a tool that enables to interact with the NEAR network directly from the shell. Among other things, the NEAR CLI enables you to:
-- [NEAR SDK](https://docs.near.org/tools/sdk) : The NEAR SDK is a library that allow to develop smart contracts. Currently, there exist two versions of NEAR SDK: one for Rust and one for JavaScript.
+- [NEAR API](https://docs.near.org/tools/near-api) : Collection of language-specific SDKs (JavaScript, Rust, Python) for interacting with NEAR blockchain - call functions, manage accounts, transfer tokens, and deploy contracts.
+- [NEAR CLI](https://docs.near.org/tools/cli) : Command line interface for NEAR Protocol - create accounts, manage keys, send tokens, deploy contracts, and interact with the blockchain from your terminal.
+- [NEAR SDK](https://docs.near.org/tools/sdk) : NEAR SDK libraries for developing smart contracts in Rust and JavaScript - comprehensive tools with reference documentation and examples for building on NEAR.
 - [NearBlocks](https://docs.near.org/tools/ecosystem-apis/nearblocks-api) : NearBlocks provides an endpoint to query actions that happened on a NEAR account, possible use cases include:
 - [Pikespeak](https://docs.near.org/tools/ecosystem-apis/pikespeak-api) : Pikespeak allows you to fetch blockchain events and aggregated analytics on wallets, validators, delegators, money transfers, dApps activity, and more.
 
@@ -103,26 +103,26 @@ This documentation is organized into several main sections: Protocol fundamental
 - [Basic Auction](https://docs.near.org/tutorials/auction/1.1-basic) : In this section, we will analyze a simple auction contract, which allows users to place bids, track the highest bidder and claim tokens at the end of the auction. After, we will cover how to test the contract, as well as how to deploy it on testnet.
 - [Basics overview laying out what will be accomplished in this first section.](https://docs.near.org/tutorials/crosswords/01-basics/00-overview) : Crossword Game Overview
 - [Bidding with FTs](https://docs.near.org/tutorials/auction/3.2-ft) : To further develop this contract we will introduce another primitive: fungible tokens. Instead of placing bids in $NEAR tokens, they will be placed in FTs. This may be useful if, for example, an auctioneer wants to keep the bid amounts constant in terms of dollars as an auction is carried out, so bids can be placed in stablecoins such as $USDC. Another use case is if a project like Ref Finance was holding its own auction and wanted the auction to happen in its projects token $REF.
-- [Coin Flip](https://docs.near.org/tutorials/examples/coin-flip) : Coin Flip is a game where the player tries to guess the outcome of a coin flip. It is one of the simplest contracts implementing random numbers.
-- [Complex Cross-Contract Calls](https://docs.near.org/tutorials/examples/advanced-xcc) : This example presents 3 instances of complex cross-contract calls. Particularly, it shows:
+- [Coin Flip](https://docs.near.org/tutorials/examples/coin-flip) : Learn to build a coin flip game smart contract with randomness, betting mechanics, and reward distribution on NEAR Protocol.
+- [Complex Cross-Contract Calls](https://docs.near.org/tutorials/examples/advanced-xcc) : Master advanced cross-contract call patterns in NEAR Protocol, including callbacks, error handling, and complex multi-contract interactions.
 
 ## API Reference
 
-- [NEAR RPC API](https://docs.near.org/api/rpc/introduction) : Home
-- [Access Keys](https://docs.near.org/api/rpc/access-keys) : The RPC API enables you to retrieve information about an accounts access keys.
-- [Accounts / Contracts](https://docs.near.org/api/rpc/contracts) : The RPC API enables you to view details about accounts and contracts as well as perform contract calls.
-- [Block / Chunk](https://docs.near.org/api/rpc/block-chunk) : The RPC API enables you to query the network and get details about specific blocks or chunks.
-- [Gas](https://docs.near.org/api/rpc/gas) : The RPC API enables you to query the gas price for a specific block or hash.
-- [Maintenance Windows](https://docs.near.org/api/rpc/maintenance-windows) : The RPC API enables you to query future maintenance windows for a specific validator
-- [Network](https://docs.near.org/api/rpc/network) : The RPC API enables you to query status information for nodes and validators.
-- [Protocol](https://docs.near.org/api/rpc/protocol) : The RPC API enables you to retrieve the current genesis and protocol configuration.
-- [RPC Endpoints](https://docs.near.org/api/rpc/transactions) : Transactions
-- [RPC Providers](https://docs.near.org/api/rpc/providers) : There are multiple RPC providers from which you can choose from. These providers will work as intermediaries to help you interact with the NEAR network.
-- [Setup](https://docs.near.org/api/rpc/setup) : In order to use the RPC API you will need to setup the correct RPC endpoints.
+- [NEAR RPC API](https://docs.near.org/api/rpc/introduction) : Learn how to interact with the NEAR network using the RPC API, including available providers, node snapshots, and quick links to all RPC endpoints.
+- [Access Keys](https://docs.near.org/api/rpc/access-keys) : Retrieve information about an account's access keys using the NEAR RPC API, including viewing keys, listing all keys, and tracking access key changes.
+- [Accounts / Contracts](https://docs.near.org/api/rpc/contracts) : View details about accounts and contracts, check contract state and code, and perform contract function calls using NEAR RPC API.
+- [Block / Chunk](https://docs.near.org/api/rpc/block-chunk) : Query the network and get details about specific blocks or chunks using the NEAR RPC API, including block details, changes in blocks, and chunk information.
+- [Gas](https://docs.near.org/api/rpc/gas) : Query gas prices for specific blocks or hashes using the NEAR RPC API.
+- [Maintenance Windows](https://docs.near.org/api/rpc/maintenance-windows) : Query future maintenance windows for validators in the current epoch using the NEAR RPC API.
+- [Network](https://docs.near.org/api/rpc/network) : Query status information for nodes and validators in the NEAR network, including node status, network info, and validation status.
+- [Protocol](https://docs.near.org/api/rpc/protocol) : Retrieve current genesis and protocol configuration using the NEAR RPC API, including network parameters and protocol versions.
+- [RPC Endpoints](https://docs.near.org/api/rpc/transactions) : Send transactions and query their status using the NEAR RPC API, including transaction status, receipts, and deprecated methods.
+- [RPC Providers](https://docs.near.org/api/rpc/providers) : Comprehensive list of NEAR RPC providers for mainnet and testnet, including public endpoints, archival nodes, and information about the deprecation of NEAR.org RPC endpoints.
+- [Setup](https://docs.near.org/api/rpc/setup) : Learn how to set up RPC endpoints for NEAR networks, configure authentication, and use tools like Postman, JavaScript, and HTTPie to interact with the API.
 
 ## Data Infrastructure
 
-- [What is Data Infrastructure?](https://docs.near.org/data-infrastructure/what-is) : NEAR offers ready-to-use solutions to access and monitor on-chain data easily. This is very useful to automate actions based on specific events, cache data to reduce latency, gather usage data of the blockchain, and even study user preferences.
+- [What is Data Infrastructure?](https://docs.near.org/data-infrastructure/what-is) : Overview of NEAR's data infrastructure solutions including Data APIs, BigQuery Public Dataset, and NEAR Lake for accessing and monitoring on-chain data.
 - [`Block` Structure](https://docs.near.org/data-infrastructure/lake-data-structures/block.mdx) : Block
 - [`Chunk` Structure](https://docs.near.org/data-infrastructure/lake-data-structures/chunk.mdx) : Chunk
 - [`ExecutionOutcome` Structure](https://docs.near.org/data-infrastructure/lake-data-structures/execution_outcome.mdx) : ExecutionOutcome
@@ -130,21 +130,21 @@ This documentation is organized into several main sections: Protocol fundamental
 - [`Shard` structure](https://docs.near.org/data-infrastructure/lake-data-structures/shard.mdx) : Shard
 - [`StateChange` Structure](https://docs.near.org/data-infrastructure/lake-data-structures/state_change.mdx) : StateChange
 - [`Transaction` Structure](https://docs.near.org/data-infrastructure/lake-data-structures/transaction.mdx) : Transaction
-- [BigQuery Public Dataset](https://docs.near.org/data-infrastructure/big-query) : BigQuery
+- [BigQuery Public Dataset](https://docs.near.org/data-infrastructure/big-query) : Learn how to use NEAR Protocol's BigQuery public dataset for blockchain data analysis, including querying on-chain data, understanding costs, and accessing historical transaction data.
 - [Building an NFT indexer](https://docs.near.org/data-infrastructure/lake-framework/building-indexers/nft-indexer) : NFT Indexer
 
 ## Integration Examples
 
-- [Introduction](https://docs.near.org/integrations/errors/introduction) : The NEAR Platform overview clarifies much of the language in this section.
-- [Accounts](https://docs.near.org/integrations/accounts) : Please see the documentation for accounts for basic information.
-- [Balance changes](https://docs.near.org/integrations/balance) : Balance Changes
-- [Create Transactions](https://docs.near.org/integrations/create-transactions) : To construct & process transactions you will need our API JavaScript library: near-api-js. There are many ways to create transactions but for this example well show you two ways to create a simple token transfer transaction.
-- [Error Implementation](https://docs.near.org/integrations/errors/error-implementation) : This page provides a very high level, sometimes "pseudocode", view of error types and related messages as implemented by the NEAR platform.
-- [Exchange Integration](https://docs.near.org/integrations/exchange-integration) : Exchange Integration
-- [Implicit Accounts](https://docs.near.org/integrations/implicit-accounts) : Implicit accounts work similarly to Bitcoin/Ethereum accounts.
-- [Integrator FAQ](https://docs.near.org/integrations/faq) : Integrator FAQ
-- [Token Loss](https://docs.near.org/integrations/errors/token-loss) : Careful! Losing tokens means losing money!
-- [Tokens](https://docs.near.org/integrations/tokens) : - Introduction
+- [Introduction](https://docs.near.org/integrations/errors/introduction) : Learn about common error patterns in NEAR protocol integrations and how to handle and troubleshoot issues in your applications.
+- [Accounts](https://docs.near.org/integrations/accounts) : Learn about NEAR account management for exchanges and integrations, including account creation, key management, and balance tracking.
+- [Balance changes](https://docs.near.org/integrations/balance) : Learn how to query and track account balances in NEAR protocol, including native NEAR tokens, fungible tokens, and balance management for integrations.
+- [Create Transactions](https://docs.near.org/integrations/create-transactions) : Learn how to create, sign, and send transactions on NEAR protocol, including transaction structure, actions, and best practices for integration.
+- [Error Implementation](https://docs.near.org/integrations/errors/error-implementation) : Learn how to properly implement error handling in NEAR protocol applications, including best practices for catching and managing errors.
+- [Exchange Integration](https://docs.near.org/integrations/exchange-integration) : Complete guide for integrating NEAR Protocol into exchanges - covers balance changes, accounts, tokens, blocks, finality, archival nodes, and staking delegation.
+- [Implicit Accounts](https://docs.near.org/integrations/implicit-accounts) : Learn about implicit accounts in NEAR, how they work with Ethereum-style addresses, and their role in chain abstraction and multi-chain integration.
+- [Integrator FAQ](https://docs.near.org/integrations/faq) : Frequently asked questions about NEAR protocol integrations, including account management, transaction fees, and common development challenges.
+- [Token Loss](https://docs.near.org/integrations/errors/token-loss) : Learn how to prevent and handle token loss scenarios in NEAR protocol integrations, including common causes and recovery strategies.
+- [Tokens](https://docs.near.org/integrations/tokens) : Learn how to integrate NEAR tokens (NEAR, FT, and NFT) into your application, including balance queries, transfers, and token metadata.
 
 ## Resources
 

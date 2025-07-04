@@ -1,6 +1,7 @@
 ---
 id: staking
 title: Validator Staking
+description: Complete guide to staking NEAR tokens, including delegation to validators, earning rewards, managing staked balances, and the unstaking process.
 sidebar_label: Staking
 ---
 import Tabs from '@theme/Tabs';

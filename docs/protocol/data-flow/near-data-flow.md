@@ -1,5 +1,6 @@
 ---
 sidebar_label: "NEAR Data Flow"
+description: Understanding how data flows through NEAR Protocol blockchain, including shards, transactions, receipts, and cross-shard communication.
 ---
 
 # NEAR Data Flow

@@ -1,7 +1,7 @@
 ---
 id: error-implementation
-title: Source Code Survey
-sidebar_label: Source Code Survey
+title: Error Implementation
+description: Learn how to properly implement error handling in NEAR protocol applications, including best practices for catching and managing errors.
 ---
 
 This page provides a very high level, sometimes "pseudocode", view of error types and related messages as implemented by the NEAR platform.
@@ -195,7 +195,7 @@ Outputs:\n\
 pub enum InvalidAccessKeyError {
     /// The access key identified by the `public_key` doesn't exist for the account
     AccessKeyNotFound { account_id: AccountId, public_key: PublicKey },
-    /// Transaction `receiver_id` doesn't match the access key receiver_id
+    /// Transaction `receiver_id` doesn't match the access key receiverId
     ReceiverMismatch { tx_receiver: AccountId, ak_receiver: AccountId },
     /// Transaction method name isn't allowed by the access key
     MethodNameMismatch { method_name: String },

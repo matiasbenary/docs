@@ -1,6 +1,7 @@
 ---
 id: balance-changes
 title: Balance changes
+description: Learn how to query and track account balances in NEAR protocol, including native NEAR tokens, fungible tokens, and balance management for integrations.
 sidebar_label: Balance Changes
 ---
 

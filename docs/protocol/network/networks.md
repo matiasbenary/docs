@@ -1,6 +1,7 @@
 ---
 id: networks
 title: NEAR Networks
+description: Overview of NEAR Protocol networks including mainnet, testnet, and localnet environments, their purposes, and how to interact with each network.
 sidebar_label: Networks
 ---
 

@@ -2,13 +2,14 @@
 id: exchange-integration
 title: Exchange Integration
 sidebar_label: Exchange Integration
+description: Complete guide for integrating NEAR Protocol into exchanges - covers balance changes, accounts, tokens, blocks, finality, archival nodes, and staking delegation.
 ---
 
 ## Integration Reference {#integration-reference}
 
 - [Balance Changes](/integrations/balance-changes)
 - [Accounts](/integrations/accounts)
-- [Fungible Tokens](/integrations/fungible-tokens)
+- [Fungible Tokens](/integrations/tokens)
 - [Implicit Accounts](/integrations/implicit-accounts)
 
 ### Transaction Reference Links {#transaction-reference-links}

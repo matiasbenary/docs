@@ -2,6 +2,7 @@
 id: how-it-works
 sidebar_label: How It Works
 title: How Omni Bridge Works
+description: Understand how Omni Bridge works using Chain Signatures and MPC services to enable trustless cross-chain transfers without complex light client implementations.
 ---
 
 ## Background

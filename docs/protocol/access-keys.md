@@ -1,6 +1,7 @@
 ---
 id: access-keys
 title: Access Keys
+description: Learn about NEAR's access key system with Full-Access Keys for complete account control and Function-Call Keys for restricted, shareable permissions to specific contracts.
 ---
 
 In most blockchains, users control their accounts by holding a single [`private key`](https://en.wikipedia.org/wiki/Public-key_cryptography) (a secret only they know) and using it to sign [transactions](./transactions.md).

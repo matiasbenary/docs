@@ -1,7 +1,7 @@
 ---
 id: token-loss
-title: Avoiding Token Loss
-sidebar_label: Avoiding Token Loss
+title: Token Loss
+description: Learn how to prevent and handle token loss scenarios in NEAR protocol integrations, including common causes and recovery strategies.
 ---
 
 :::warning

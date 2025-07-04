@@ -1,6 +1,7 @@
 ---
 id: wallet
 title: Wallet Chain Key Rules 
+description: Learn about wallet chain key rules for multichain transactions, including key derivation, signature security, and user flow patterns to prevent cross-chain signature attacks.
 ---
 
 ## Overview

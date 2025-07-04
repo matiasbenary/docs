@@ -1,5 +1,6 @@
 ---
 sidebar_label: Token Transfer
+description: Detailed explanation of token transfer flow in NEAR Protocol, including cross-shard transfers, gas refunds, and the receipt-based execution model.
 ---
 
 # Token Transfer flow
